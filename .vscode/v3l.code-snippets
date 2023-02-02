@@ -1,0 +1,32 @@
+{
+  "vue3+less+ts+setup": {
+    "prefix": "v3l",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "",
+      "</style>",
+      ""
+    ],
+    "description": "vue3+less+ts+setup"
+  },
+  "style+less+scoped": {
+    "prefix": "sl",
+    "body": [
+      "<style lang=\"less\" scoped>",
+      "",
+      "</style>",
+      ""
+    ],
+    "description": "style+less+scoped"
+  }
+}

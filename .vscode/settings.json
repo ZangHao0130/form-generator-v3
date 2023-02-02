@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["Vitesse"],
+  "cSpell.words": [
+    "Attributify",
+    "composables",
+    "Unocss",
+    "unplugin",
+    "Vitesse",
+    "vueuse"
+  ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
