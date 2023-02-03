@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { componentOptions } from '@/model'
 const options = componentOptions
-const activeNames = ref([])
+const activeNames = ref(['base'])
 </script>
 
 <template>
@@ -11,6 +11,7 @@ const activeNames = ref([])
       :key="item.name"
       :title="item.title"
       :name="item.name"
+      class="cmp-wrapper"
     >
       <template v-if="item.children">
         <cmp-item v-for="cmp in item.children" :key="cmp.name" :item="cmp" />
@@ -20,5 +21,12 @@ const activeNames = ref([])
 </template>
 
 <style lang="less" scoped>
-
+.cmp-wrapper {
+  :deep(.el-collapse-item__content){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 </style>

@@ -7,10 +7,14 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CenterArea: typeof import('./src/components/cmp/center-area.vue')['default']
+    CenterButton: typeof import('./src/components/cmp/center-button.vue')['default']
     CenterContainer: typeof import('./src/components/center-container.vue')['default']
+    CenterHeader: typeof import('./src/components/cmp/center-header.vue')['default']
     CmpItem: typeof import('./src/components/cmp/cmp-item.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElButtonGroup: typeof import('element-plus/es')['ElButtonGroup']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']
     ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElContainer: typeof import('element-plus/es')['ElContainer']
@@ -22,7 +26,9 @@ declare module '@vue/runtime-core' {
     ElTabs: typeof import('element-plus/es')['ElTabs']
     HeaderContainer: typeof import('./src/components/header-container.vue')['default']
     IMdiAccount: typeof import('~icons/mdi/account')['default']
+    IMdiCheck: typeof import('~icons/mdi/check')['default']
     IMdiFilmstripBoxMultiple: typeof import('~icons/mdi/filmstrip-box-multiple')['default']
+    IMdiRadio: typeof import('~icons/mdi/radio')['default']
     LeftContainer: typeof import('./src/components/left-container.vue')['default']
     LibContainer: typeof import('./src/components/cmp/lib-container.vue')['default']
     RightContainer: typeof import('./src/components/right-container.vue')['default']

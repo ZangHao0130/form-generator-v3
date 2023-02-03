@@ -33,6 +33,9 @@
     }
 
     .el-main {
+      padding: 0;
+    height: 100%;
+      overflow: hidden;
       border-right: @border-dash;
       border-left: @border-dash;
     }
