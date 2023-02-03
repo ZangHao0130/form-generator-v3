@@ -8,6 +8,8 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   resolve: {
@@ -23,6 +25,8 @@ export default defineConfig({
         }),
       },
     }),
+
+    Icons({}),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
@@ -46,7 +50,11 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
-      resolvers: [ElementPlusResolver()],
+
+      resolvers: [
+        ElementPlusResolver({}),
+        IconsResolver({}),
+      ],
     }),
   ],
 

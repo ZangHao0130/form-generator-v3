@@ -8,10 +8,10 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CenterContainer: typeof import('./src/components/center-container.vue')['default']
-    CmpLib: typeof import('./src/components/cmp-lib.vue')['default']
-    CmpSetting: typeof import('./src/components/cmp-setting.vue')['default']
+    CmpItem: typeof import('./src/components/cmp/cmp-item.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
-    ElButton: typeof import('element-plus/es')['ElButton']
+    ElCollapse: typeof import('element-plus/es')['ElCollapse']
+    ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElImage: typeof import('element-plus/es')['ElImage']
@@ -19,14 +19,13 @@ declare module '@vue/runtime-core' {
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
-    FormHeader: typeof import('./src/components/form-header.vue')['default']
     HeaderContainer: typeof import('./src/components/header-container.vue')['default']
+    IMdiAccount: typeof import('~icons/mdi/account')['default']
+    IMdiFilmstripBoxMultiple: typeof import('~icons/mdi/filmstrip-box-multiple')['default']
     LeftContainer: typeof import('./src/components/left-container.vue')['default']
+    LibContainer: typeof import('./src/components/cmp/lib-container.vue')['default']
     RightContainer: typeof import('./src/components/right-container.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
   }
 }
