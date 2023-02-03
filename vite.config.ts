@@ -10,6 +10,7 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
+import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
 export default defineConfig({
   resolve: {
@@ -26,7 +27,11 @@ export default defineConfig({
       },
     }),
 
-    Icons({}),
+    Icons({
+      customCollections: {
+        my: FileSystemIconLoader('@/assets/icons'),
+      },
+    }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),

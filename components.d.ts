@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     CenterContainer: typeof import('./src/components/center-container.vue')['default']
     CmpItem: typeof import('./src/components/cmp/cmp-item.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
+    ElButton: typeof import('element-plus/es')['ElButton']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']
     ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElContainer: typeof import('element-plus/es')['ElContainer']

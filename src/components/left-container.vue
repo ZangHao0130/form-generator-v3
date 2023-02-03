@@ -3,10 +3,10 @@ const activePanel = ref('lib')
 </script>
 
 <template>
-  <el-scrollbar>
+  <el-scrollbar class="left-container">
     <el-tabs v-model="activePanel" stretch>
       <el-tab-pane label="组件库" name="lib">
-        组件库
+        <lib-container />
       </el-tab-pane>
       <el-tab-pane label="表单模板" name="form">
         表单模板
@@ -16,5 +16,13 @@ const activePanel = ref('lib')
 </template>
 
 <style lang="less" scoped>
+.left-container {
 
+  :deep(.el-tabs) {
+    .el-tabs__header {
+      margin: 0;
+    }
+  }
+
+}
 </style>
