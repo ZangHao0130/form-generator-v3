@@ -29,12 +29,12 @@
   :deep(.el-container) {
     height: 100%;
     .el-header {
-      border-bottom: 1px dashed var(--el-border-color);
+      border-bottom: @border-dash;
     }
 
     .el-main {
-      border-right: 1px dashed var(--el-border-color);
-      border-left: 1px dashed var(--el-border-color);
+      border-right: @border-dash;
+      border-left: @border-dash;
     }
 
     .el-aside {

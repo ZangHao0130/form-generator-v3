@@ -63,8 +63,12 @@ export default defineConfig({
     }),
   ],
 
-  // https://github.com/vitest-dev/vitest
-  test: {
-    environment: 'jsdom',
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: `@import "${path.resolve(__dirname, 'src/assets/css/common.less')}";`,
+      },
+    },
   },
+
 })
